@@ -1,0 +1,53 @@
+.relative {
+    padding: 10px;
+    position: relative;
+    margin-right: 40px;
+    margin-left: 400px;
+  }
+  
+  .navitem {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border: gray;
+    margin-right: 40px;
+  }
+  
+  .content {
+    overflow: auto;
+    width: 1500px;
+  }
+  
+  .left,
+  .right {
+    width: 40%;
+    margin: 5px;
+    padding: 1em;
+    background: white;
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card1{
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: rgb(161, 175, 158);
+  }

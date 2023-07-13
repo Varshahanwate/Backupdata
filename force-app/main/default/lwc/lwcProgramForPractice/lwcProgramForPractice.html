@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Hello">
+        <lightning-button label="New" slot="action"></lightning-button>
+        <p class="slds-p-horizontal_medium">I Am working with Kalyani and disscuss with her</p>
+        <lightning-carousel-image
+        src = "https://www.lightningdesignsystem.com/assets/images/carousel/carousel-01.jpg"
+        href = "javascript:void(0);">
+    </lightning-carousel-image>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-button-menu alternative-text="Show menu">
+            <lightning-menu-item value="MenuItemOne" label="Menu Item One"></lightning-menu-item>
+            <lightning-menu-item value="MenuItemTwo" label="Menu Item Two"></lightning-menu-item>
+            <lightning-menu-item value="MenuItemThree" label="Menu Item Three"></lightning-menu-item>
+            <lightning-menu-item value="MenuItemFour" label="Menu Item Four"></lightning-menu-item>
+        </lightning-button-menu>
+        <lightning-button-menu
+        alternative-text="Action"
+        onselect={handleMenuSelect}
+    >
+        <template for:each={items} for:item="action">
+            <lightning-menu-item
+                label={action.label}
+                value={action.value}
+                key={action.label}
+            >
+            </lightning-menu-item>
+        </template>
+    </lightning-button-menu>
+    </div>
+        <p slot="footer"> Hoody</p>
+    </lightning-card>
+</template>

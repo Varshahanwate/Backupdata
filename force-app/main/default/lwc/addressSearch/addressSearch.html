@@ -1,0 +1,13 @@
+<template>
+    <template for:each={addressOptions} for:item="Address_New__c">
+        <lightning-combobox key={Address_New__c.value}
+            name="Address_New__c"
+            label="Select Address"
+            placeholder="Search addresses"
+            options={addressOptions}
+            value={selectedAddress}
+            onchange={handleAddressChange}
+            class="slds-m-around_medium"
+        ></lightning-combobox>
+    </template>
+</template>
