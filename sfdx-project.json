@@ -6,7 +6,7 @@
     }
   ],
   "name": "test",
-  "namespace": "",
+  "namespace": "varshagit",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "57.0"
 }
