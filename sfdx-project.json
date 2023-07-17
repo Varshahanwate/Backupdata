@@ -5,8 +5,8 @@
       "default": true
     }
   ],
-  "name": "test",
-  "namespace": "varshagit",
+  "name": "neworg",
+  "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "57.0"
 }
